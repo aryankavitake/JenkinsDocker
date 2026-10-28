@@ -28,8 +28,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                bat 'docker rm -f containertut5'
-                bat 'docker run -d --name containertut5 -p 5000:5000 tut5'
+                bat 'docker run -d --name containertut6 -p 5001:5000 tut5'
             }
         }
     }
